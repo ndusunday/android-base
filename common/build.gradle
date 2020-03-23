@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
@@ -26,9 +28,20 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation SupportLibraries.appcompat
+    implementation SupportLibraries.fragment
+    implementation SupportLibraries.core
+    implementation Deps.glide
+    implementation Deps.kotlin_jdk
+    implementation Deps.kotlin_stdlib
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation TestDeps.junit
+    testImplementation TestDeps.junit_x
+    androidTestImplementation TestDeps.junit_x
+    androidTestImplementation TestDeps.test_rule
+    androidTestImplementation TestDeps.support_test
+    androidTestImplementation TestDeps.espresso_core
+}
+repositories {
+    mavenCentral()
 }

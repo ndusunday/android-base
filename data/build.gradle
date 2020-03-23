@@ -58,9 +58,10 @@ dependencies {
     implementation Deps.coroutine_android
 
     testImplementation TestDeps.junit
-    androidTestImplementation TestDeps.arch_testing
+//    androidTestImplementation TestDeps.arch_testing
     androidTestImplementation TestDeps.support_test
     androidTestImplementation TestDeps.espresso_core
 
     implementation project(Modules.domain)
+    implementation project(Modules.common)
 }

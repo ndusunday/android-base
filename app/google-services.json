@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "194841043071",
+    "firebase_url": "https://atracker-bf077.firebaseio.com",
+    "project_id": "atracker-bf077",
+    "storage_bucket": "atracker-bf077.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194841043071:android:129a4cedbd334286de5f4a",
+        "android_client_info": {
+          "package_name": "com.zistus.atracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194841043071-dr8jljl597nkrk8up7brg7lkbu18fkok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJBHnM08ZU27VXbouCwcd1On1CZcjCr4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194841043071-dr8jljl597nkrk8up7brg7lkbu18fkok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

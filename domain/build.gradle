@@ -43,7 +43,12 @@ dependencies {
     kapt Deps.lifecycle_compiler
 
     testImplementation TestDeps.junit
-    androidTestImplementation TestDeps.arch_testing
+//    androidTestImplementation TestDeps.arch_testing
     androidTestImplementation TestDeps.support_test
     androidTestImplementation TestDeps.espresso_core
+    androidTestImplementation TestDeps.mockito
+    androidTestImplementation TestDeps.mocito_core
+    androidTestImplementation TestDeps.core_test
+
+    implementation project(Modules.common)
 }

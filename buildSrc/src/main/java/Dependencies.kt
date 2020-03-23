@@ -1,14 +1,16 @@
 object ApplicationId {
-    val application_id = "com.zistus.basicx"
+    val application_id = "com.zistus.atracker"
 }
 
 object Releases {
-    val version_code = 7
-    val version_name = " alpha 1.4.1"
+    val version_code = 1
+    val version_name = " alpha 1.0.0"
 }
 
 object Modules {
     val domain = ":domain"
+    val common = ":common"
+    val data = ":data"
 }
 
 object SDKVersions {
@@ -28,6 +30,7 @@ object Versions {
     val lifecycle_version = "2.1.0"
     val navigation_architecture = "2.0.0"
     val room_version = "2.1.0-alpha01"
+    val fragment_version = "1.2.0"
 
     val koin_version = "2.0.1"
     val nav_verison = "2.1.0"
@@ -55,10 +58,20 @@ object Versions {
     val espresso = "3.1.0"
     val espresso_contrib = "3.1.0"
     val junit = "4.12"
+    val junit_x = "1.1.0"
     val mockito = "2.13.0"
     val mockito_core = "2.28.2"
     val support_test = "1.0.2"
+    val core_test = "1.0.0"
     val robo_electric = "1.0.0"
+    val fragment_testing = "1.1.0"
+
+    val firebase_auth_version = "19.2.0"
+    val firebase_db_version = "19.2.0"
+    val firebase_firestore_version = "21.3.1"
+    val firebase_location_version = "17.0.0"
+    val firebase_analytics_version = "17.2.1"
+    val anko_version = "0.10.8"
 }
 
 object ClassPaths {
@@ -94,7 +107,7 @@ object Deps {
     val rx_kotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rx_kotlin}"
     val rx_compiler = "android.arch.persistence.room:compiler:${Versions.rx_java}"
 
-    var coroutine =  "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutine_version}"
+    var coroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutine_version}"
     var coroutine_android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutine_version}"
 
 
@@ -109,24 +122,34 @@ object Deps {
     val nav_fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.nav_verison}"
     val navigation = "androidx.navigation:navigation-ui-ktx:${Versions.nav_verison}"
 
+    val anko_commons = "org.jetbrains.anko:anko-commons:${Versions.anko_version}"
+    val anko_designs = "org.jetbrains.anko:anko-design:${Versions.anko_version}"
+
     val timber = "com.jakewharton.timber:timber:${Versions.timber_version}"
 
     val easyPref = "com.pixplicity.easyprefs:library:${Versions.easy_pref_version}"
+
+    val firebase_auth = "com.google.firebase:firebase-auth:${Versions.firebase_auth_version}"
+    val google_location = "com.google.android.gms:play-services-location:${Versions.firebase_location_version}"
+    val firebase_db = "com.google.firebase:firebase-database:${Versions.firebase_db_version}"
+    val firebase_analytics = "com.google.firebase:firebase-analytics:${Versions.firebase_analytics_version}"
 }
 
 
 object SupportLibraries {
     val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
+    val fragment = "androidx.fragment:fragment-ktx:${Versions.fragment_version}"
     val supportLagacy = "androidx.legacy:legacy-support-v4:${Versions.lagacy}"
     val core = "androidx.core:core-ktx:${Versions.core}"
     val design = "com.google.android.material:material:${Versions.design}"
-    val cardview= "androidx.cardview:cardview:${Versions.support}"
+    val cardview = "androidx.cardview:cardview:${Versions.support}"
     val recyclerview = "androidx.recyclerview:recyclerview:${Versions.support}"
     val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constrainst_layout}"
 }
 
 object TestDeps {
     val junit = "junit:junit:${Versions.junit}"
+    val junit_x = "androidx.test.ext:junit:${Versions.junit_x}"
     val espresso_core = "androidx.test.espresso:espresso-core:${Versions.espresso}"
     val espresso_intents = "androidx.test.espresso:espresso-intents:${Versions.espresso}"
     val espresso_contrib = "androidx.test.espresso:espresso-contrib:${Versions.espresso_contrib}"
@@ -134,5 +157,7 @@ object TestDeps {
     val mockito = "org.mockito:mockito-inline:${Versions.mockito}"
     val arch_testing = "android.arch.core:core-testing:${Versions.android_arch}"
     val support_test = "androidx.test:runner:${Versions.support_test}"
-    val robo_electric = "androidx.test:core:${Versions.robo_electric}"
+    val core_test = "androidx.test:core:${Versions.core_test}"
+    val fragment_test = "androidx.fragment:fragment-testing:${Versions.fragment_testing}"
+    val test_rule = "androidx.test:rules:1.1.0"
 }
