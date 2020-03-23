@@ -57,6 +57,11 @@ dependencies {
     implementation Deps.coroutine
     implementation Deps.coroutine_android
 
+    implementation Deps.firebase_auth
+    implementation Deps.google_location
+    implementation Deps.firebase_db
+    implementation Deps.firebase_analytics
+
     testImplementation TestDeps.junit
 //    androidTestImplementation TestDeps.arch_testing
     androidTestImplementation TestDeps.support_test

@@ -28,12 +28,9 @@ class HomeViewModel(private val useCase: BaseUseCase) : BaseViewModel() {
 
     private val user = MutableLiveData<User>()
 
-    fun fetchUser(id: Int) =
-        useCase.getTestObject()
-            .subscribeOn(Schedulers.newThread())
-            .subscribe { test ->
-                Timber.e( test.id)
-            }.track()
+    fun fetchUser(id: Int){
+
+    }
 
     suspend fun signUserIn(user: String, password: String, callback: (user: FirebaseUser?, error: java.lang.Exception?)-> Unit) {
         firebase.signInHandler(user, password).addOnCompleteListener {
@@ -53,40 +50,20 @@ class HomeViewModel(private val useCase: BaseUseCase) : BaseViewModel() {
 
     suspend fun fetchTest() {
         withContext(Dispatchers.Main) {
-            useCase.fetchTestWithCoroutine()
+//            useCase.fetchTestWithCoroutine()
         }
 
     }
 
     fun testReturnString(): String {
        val test = ""
-        return test.testString()
+        return useCase.testString()
     }
 
     fun getTester() {
-        useCase.getTestObject()
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribeOn(Schedulers.newThread())
-            .subscribe { test, error->
-               signedInUser.postValue(test)
-            }.track()
+
     }
 
     fun testObjectDataState() {
-        useCase.fetchTestObjectDataState()
-            .applyNewScheduler()
-            .subscribe { state->
-                when(state) {
-                    is DataState.Success->{
-                        responseLiveData.postValue(ResponseLiveData(ResponseType.TEST_ENUM, state.data, null))
-                    }
-                    is DataState.Loading-> {
-                        responseLiveData.postValue(ResponseLiveData(ResponseType.TEST_ENUM, state.data, null))
-                    }
-                    is DataState.Failed -> {
-                        responseLiveData.postValue(ResponseLiveData(ResponseType.TEST_ENUM, null, state.error))
-                    }
-                }
-            }.track()
     }
 }
