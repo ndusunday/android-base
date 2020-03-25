@@ -42,6 +42,11 @@ dependencies {
     implementation Deps.lifecycle_ext
     kapt Deps.lifecycle_compiler
 
+    implementation Deps.firebase_auth
+    implementation Deps.google_location
+    implementation Deps.firebase_db
+    implementation Deps.firebase_analytics
+
     testImplementation TestDeps.junit
 //    androidTestImplementation TestDeps.arch_testing
     androidTestImplementation TestDeps.support_test

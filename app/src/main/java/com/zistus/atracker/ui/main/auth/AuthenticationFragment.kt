@@ -16,5 +16,8 @@ class AuthenticationFragment: BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+//        authViewModel.loginUser("tester@test.com", "testing12")
+//        authViewModel.loginUserPhone(activity!!, "+2348031162141")
+        authViewModel.loginUserPhone("+2348031162141", "123456")
     }
 }

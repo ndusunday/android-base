@@ -1,7 +1,9 @@
 package com.zistus.atracker.entity
 
 enum class ResponseType{
-    TEST_ENUM
+    TEST_ENUM,
+
+    AUTH_LOGIN
 }
 
 enum class ResponseState {

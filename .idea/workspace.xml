@@ -6,17 +6,12 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f5fbad0-e829-4821-a4ba-225129e91b69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/auth_nav.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseImplementation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseInteractor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/user/UserRepositoryImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/user/UserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/mapper/FirebaseToEntity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -29,32 +24,36 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_rc01_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_rc01_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_rc01_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_rc01_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_ktx_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_ktx_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/di/Module.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/di/Module.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseType.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_authentication.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_authentication.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/home/HomeViewModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/home/HomeViewModelTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/BaseRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/BaseRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseImplementation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseImplementation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseInteractor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseInteractor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/user/UserRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/user/UserRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/domain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/BaseRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/BaseRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCaseImp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCaseImp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/auth/AuthUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/auth/AuthUseCaseImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCaseImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/entity/Entity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/entity/Entity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/user/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/user/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCaseImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCaseImpl.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,71 +113,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/home/HomeViewModelTest.kt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-              <folding>
-                <element signature="e#42#690#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="431">
+              <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-testing/2.0.0/a53c7e5ac1082c8ba113336aea25c46c8611be2d/core-testing-2.0.0-sources.jar!/androidx/arch/core/executor/testing/InstantTaskExecutorRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCase.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCaseImp.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeViewModel.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/di/Module.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModel.kt">
+        <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/user/UserRepository.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
-                <element signature="e#42#223#0" expanded="true" />
+                <element signature="e#43#228#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCaseImpl.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -186,29 +146,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCase.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state relative-caret-position="144">
+              <caret line="15" column="93" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="93" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCaseImpl.kt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+            <state relative-caret-position="251">
+              <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseImplementation.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding>
-                <element signature="e#41#113#0" expanded="true" />
+                <element signature="e#50#462#0" expanded="true" />
+                <element signature="e#1574#3564#2" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt">
+        <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/user/UserRepositoryImpl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="273">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+              <folding>
+                <element signature="e#41#406#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseInteractor.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding>
+                <element signature="e#50#184#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,8 +226,8 @@
         <option value="Kotlin Object" />
         <option value="navigationResourceFile" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -243,8 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/BaseActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/location/LocationFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/BaseFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/extension/Lifecycle.kt" />
@@ -260,40 +261,42 @@
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/zistus/atracker/ui/main/home/HomeFragmentTest.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/zistus/atracker/TestHomeFragment.kt" />
         <option value="$PROJECT_DIR$/common/build.gradle" />
-        <option value="$PROJECT_DIR$/domain/build.gradle" />
         <option value="$PROJECT_DIR$/buildSrc/src/main/java/Dependencies.kt" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/state/DataState.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseType.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseData.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/extension/DataStateToReponseLiveData.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseLiveData.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeFragment.kt" />
         <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/ApiSourceImp.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/zistus/atracker/HomeFragmentTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/navigation/auth_nav.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_authentication.xml" />
-        <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/user/UserRepository.kt" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/BaseRepository.kt" />
         <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/BaseRepositoryImpl.kt" />
         <option value="$PROJECT_DIR$/data/build.gradle" />
-        <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseInteractor.kt" />
-        <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseImplementation.kt" />
         <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/model/Dto.kt" />
-        <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/user/UserRepositoryImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/di/Module.kt" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCase.kt" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCaseImp.kt" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/home/HomeViewModelTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeViewModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModel.kt" />
+        <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/mapper/FirebaseToEntity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseType.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/di/Module.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/entity/Entity.kt" />
+        <option value="$PROJECT_DIR$/domain/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationFragment.kt" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCase.kt" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCaseImpl.kt" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/user/UserRepository.kt" />
+        <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseInteractor.kt" />
+        <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/user/UserRepositoryImpl.kt" />
+        <option value="$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseImplementation.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModel.kt" />
       </list>
     </option>
   </component>
@@ -308,66 +311,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="android-base" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="atracker" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="atracker" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="atracker" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="atracker" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
-              <item name="domain" type="feadf853:AndroidModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane" />
       <pane id="PackagesPane">
         <subPane>
@@ -395,6 +338,32 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="android-base" type="1abcf292:AndroidViewProjectNode" />
+              <item name="data" type="feadf853:AndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="android-base" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,10 +376,10 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="device.picker.selection" value="Nexus_Demo" />
+    <property name="device.picker.selection" value="OUKIC12PRO059392" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/common/src/main/java/com/zistus/common" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -459,8 +428,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.HomeViewModelTest.testSetUp">
-    <configuration name="AuthenticationViewModelTest.testSetUp" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="AuthenticationViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -470,60 +439,57 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zistus.atracker.ui.main.auth" />
       <option name="MAIN_CLASS_NAME" value="com.zistus.atracker.ui.main.auth.AuthenticationViewModelTest" />
-      <option name="METHOD_NAME" value="testSetUp" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationViewModelTest.login with email and password and update loginResponse with failed user entity" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zistus.atracker.ui.main.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zistus.atracker.ui.main.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.zistus.atracker.ui.main.auth.AuthenticationViewModelTest" />
+      <option name="METHOD_NAME" value="login with email and password and update loginResponse with failed user entity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeFragmentTest.useAppContext" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthenticationViewModelTest.login with email and password and updater loginResponse with user entity" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zistus.atracker.*" />
+          <option name="PATTERN" value="com.zistus.atracker.ui.main.auth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zistus.atracker" />
-      <option name="MAIN_CLASS_NAME" value="com.zistus.atracker.HomeFragmentTest" />
-      <option name="METHOD_NAME" value="useAppContext" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeViewModelTest.request for test object should update response live data" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zistus.atracker.ui.main.home.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zistus.atracker.ui.main.home" />
-      <option name="MAIN_CLASS_NAME" value="com.zistus.atracker.ui.main.home.HomeViewModelTest" />
-      <option name="METHOD_NAME" value="request for test object should update response live data" />
+      <option name="PACKAGE_NAME" value="com.zistus.atracker.ui.main.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.zistus.atracker.ui.main.auth.AuthenticationViewModelTest" />
+      <option name="METHOD_NAME" value="login with email and password and updater loginResponse with user entity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeViewModelTest.testSetUp" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthenticationViewModelTest.loginUser" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zistus.atracker.ui.main.home.*" />
+          <option name="PATTERN" value="com.zistus.atracker.ui.main.auth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zistus.atracker.ui.main.home" />
-      <option name="MAIN_CLASS_NAME" value="com.zistus.atracker.ui.main.home.HomeViewModelTest" />
-      <option name="METHOD_NAME" value="testSetUp" />
+      <option name="PACKAGE_NAME" value="com.zistus.atracker.ui.main.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.zistus.atracker.ui.main.auth.AuthenticationViewModelTest" />
+      <option name="METHOD_NAME" value="loginUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -590,70 +556,40 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeFragmentTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <option name="TESTING_TYPE" value="2" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="com.zistus.atracker.HomeFragmentTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-      </Profilers>
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+    <configuration name="android-base:app [compileDebugAndroidTestKotlin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileDebugAndroidTestKotlin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Android App.app" />
-      <item itemvalue="Android JUnit.HomeFragmentTest.useAppContext" />
-      <item itemvalue="Android Instrumented Tests.HomeFragmentTest" />
-      <item itemvalue="Android JUnit.HomeViewModelTest.request for test object should update response live data" />
-      <item itemvalue="Android JUnit.AuthenticationViewModelTest.testSetUp" />
-      <item itemvalue="Android JUnit.HomeViewModelTest.testSetUp" />
+      <item itemvalue="Android JUnit.AuthenticationViewModelTest.loginUser" />
+      <item itemvalue="Android JUnit.AuthenticationViewModelTest.login with email and password and updater loginResponse with user entity" />
+      <item itemvalue="Android JUnit.AuthenticationViewModelTest.login with email and password and update loginResponse with failed user entity" />
+      <item itemvalue="Android JUnit.AuthenticationViewModelTest" />
+      <item itemvalue="Gradle.android-base:app [compileDebugAndroidTestKotlin]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.HomeViewModelTest.testSetUp" />
-        <item itemvalue="Android JUnit.AuthenticationViewModelTest.testSetUp" />
-        <item itemvalue="Android Instrumented Tests.HomeFragmentTest" />
-        <item itemvalue="Android JUnit.HomeViewModelTest.request for test object should update response live data" />
-        <item itemvalue="Android JUnit.HomeFragmentTest.useAppContext" />
+        <item itemvalue="Android JUnit.AuthenticationViewModelTest" />
+        <item itemvalue="Android JUnit.AuthenticationViewModelTest.login with email and password and update loginResponse with failed user entity" />
+        <item itemvalue="Android JUnit.AuthenticationViewModelTest.login with email and password and updater loginResponse with user entity" />
+        <item itemvalue="Gradle.android-base:app [compileDebugAndroidTestKotlin]" />
+        <item itemvalue="Android JUnit.AuthenticationViewModelTest.loginUser" />
       </list>
     </recent_temporary>
   </component>
@@ -671,39 +607,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AuthenticationViewModelTest_testSetUp - 2020.03.23 at 06h 18m 58s.xml">
-      <configuration name="AuthenticationViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest_login_with_email_and_password_and_update_loginResponse_with_failed_user_entity - 2020.03.23 at 12h 26m 12s.xml">
+      <configuration name="AuthenticationViewModelTest.login with email and password and update loginResponse with failed user entity" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="AuthenticationViewModelTest_testSetUp - 2020.03.23 at 06h 30m 22s.xml">
-      <configuration name="AuthenticationViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest_login_with_email_and_password_and_update_loginResponse_with_failed_user_entity - 2020.03.23 at 12h 26m 37s.xml">
+      <configuration name="AuthenticationViewModelTest.login with email and password and update loginResponse with failed user entity" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="AuthenticationViewModelTest_testSetUp - 2020.03.23 at 06h 31m 46s.xml">
-      <configuration name="AuthenticationViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest - 2020.03.23 at 12h 27m 39s.xml">
+      <configuration name="AuthenticationViewModelTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="AuthenticationViewModelTest_testSetUp - 2020.03.23 at 06h 32m 08s.xml">
-      <configuration name="AuthenticationViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest - 2020.03.23 at 12h 28m 25s.xml">
+      <configuration name="AuthenticationViewModelTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="AuthenticationViewModelTest_testSetUp - 2020.03.23 at 06h 32m 53s.xml">
-      <configuration name="AuthenticationViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest - 2020.03.23 at 12h 29m 34s.xml">
+      <configuration name="AuthenticationViewModelTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="AuthenticationViewModelTest_testSetUp - 2020.03.23 at 06h 34m 19s.xml">
-      <configuration name="AuthenticationViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest - 2020.03.23 at 13h 01m 06s.xml">
+      <configuration name="AuthenticationViewModelTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeViewModelTest_testSetUp - 2020.03.23 at 06h 36m 42s.xml">
-      <configuration name="HomeViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest - 2020.03.23 at 13h 01m 27s.xml">
+      <configuration name="AuthenticationViewModelTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="AuthenticationViewModelTest_testSetUp - 2020.03.23 at 06h 37m 12s.xml">
-      <configuration name="AuthenticationViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest - 2020.03.23 at 13h 03m 54s.xml">
+      <configuration name="AuthenticationViewModelTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeViewModelTest_testSetUp - 2020.03.23 at 06h 40m 03s.xml">
-      <configuration name="HomeViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest - 2020.03.23 at 13h 04m 38s.xml">
+      <configuration name="AuthenticationViewModelTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeViewModelTest_testSetUp - 2020.03.23 at 06h 41m 10s.xml">
-      <configuration name="HomeViewModelTest.testSetUp" configurationId="AndroidJUnit" />
+    <history-entry file="AuthenticationViewModelTest - 2020.03.23 at 13h 05m 26s.xml">
+      <configuration name="AuthenticationViewModelTest" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -716,14 +652,14 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Get Gist" order="0" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.4433735" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.44096386" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32771084" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3433735" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.37228915" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3421687" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.37228915" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -742,68 +678,7 @@
       <window_info anchor="right" id="Flutter Outline" order="11" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buildSrc/src/main/java/Dependencies.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1391">
-          <caret line="157" column="36" selection-start-line="157" selection-start-column="36" selection-end-line="157" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/zistus/atracker/ExampleInstrumentedTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/zistus/atracker/test/BuildConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseType.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/state/DataState.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -818,13 +693,6 @@
           <folding>
             <element signature="e#39#169#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseLiveData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -847,17 +715,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-          <folding>
-            <element signature="e#466#484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -912,13 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/BaseFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -933,20 +783,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/services/TrackingService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1526">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/BaseRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -990,38 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseInteractor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/model/Dto.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/user/UserRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseImplementation.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -1039,31 +847,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/firebase/FirebaseInteractor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/MyApplication.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/user/UserRepositoryImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/di/Module.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1081,10 +868,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/home/HomeViewModelTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        <state relative-caret-position="277">
+          <caret line="76" column="69" selection-start-line="69" selection-start-column="10" selection-end-line="76" selection-end-column="69" />
           <folding>
             <element signature="e#42#690#0" expanded="true" />
           </folding>
@@ -1093,49 +887,189 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        <state relative-caret-position="112">
+          <caret line="23" column="86" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/BaseUseCase.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/firebase/FirebaseImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="-185">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/firebase/FirebaseInteractor.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="64">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModel.kt">
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/mapper/FirebaseToEntity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="112">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
-            <element signature="e#42#223#0" expanded="true" />
+            <element signature="e#32#115#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/home/HomeFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/entity/ResponseLiveData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/services/TrackingService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="46" column="92" selection-start-line="46" selection-start-column="92" selection-end-line="46" selection-end-column="92" />
+          <folding>
+            <element signature="e#1644#1686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/467aa5b4762ab112011a2cec953e2ea5/jars/classes.jar!/com/google/firebase/auth/PhoneAuthProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/di/Module.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/entity/Entity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCase.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state relative-caret-position="144">
+          <caret line="15" column="93" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/usecases/user/UserUseCaseImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        <state relative-caret-position="289">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/zistus/domain/repository/user/UserRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
-            <element signature="e#41#113#0" expanded="true" />
+            <element signature="e#43#228#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/repository/user/UserRepositoryImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="e#41#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseImplementation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="e#50#462#0" expanded="true" />
+            <element signature="e#1574#3564#2" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/com/zistus/data/datasources/api/firebase/FirebaseInteractor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="e#50#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/zistus/atracker/ui/main/auth/AuthenticationViewModelTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
         </state>
       </provider>
     </entry>

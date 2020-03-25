@@ -26,6 +26,7 @@ import com.zistus.domain.usecases.user.UserUseCase
 import com.zistus.domain.usecases.user.UserUseCaseImpl
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.koin.android.ext.koin.androidApplication
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -87,13 +88,13 @@ val retrofitModule = module {
             .build()
     }
 
-    fun provideFireBase(): FirebaseInteractor {
-        return FirebaseImplementation(FirebaseAuth.getInstance())
+    fun provideFireBase(context: Context): FirebaseInteractor {
+        return FirebaseImplementation(FirebaseAuth.getInstance(), context)
     }
 
     single { provideOkhttpClient() }
     single { provideRetrofit(get()) }
-    single { provideFireBase() }
+    single { provideFireBase(androidContext()) }
 //    single { provideCoroutineRetrofit(get()) }
 }
 
@@ -115,10 +116,16 @@ val repositoryModule = module {
 
     fun provideBaseRepository(apiSource: ApiSource, databaseSource: DatabaseSource): BaseRepository =
         BaseRepositoryImpl(apiSource = apiSource, databaseSource = databaseSource)
-    fun provideUserRepository(): UserRepository = UserRepositoryImpl()
+
+    fun provideUserRepository(
+        firebase: FirebaseInteractor,
+        apiService: ApiService,
+        databaseSource: DatabaseSource
+    ): UserRepository =
+        UserRepositoryImpl(firebase, apiService, databaseSource)
 
     single { provideBaseRepository(get(), get()) }
-    single { provideUserRepository() }
+    single { provideUserRepository(get(), get(), get()) }
 }
 
 val fragmentModule = module {

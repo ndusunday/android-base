@@ -34,15 +34,15 @@ class HomeFragment : BaseFragment() {
     }
 
     private fun updateResponse(responseLiveData: ResponseLiveData?) {
-        responseLiveData?.let { response ->
-            when (response.type) {
-                ResponseType.TEST_ENUM-> {
-                    response.data?.let { data ->
-                        updateTestViews(data as Entity.TestObject)
-                    }
-                }
-            }
-        }
+//        responseLiveData?.let { response ->
+//            when (response.type) {
+//                ResponseType.TEST_ENUM-> {
+//                    response.data?.let { data ->
+//                        updateTestViews(data as Entity.TestObject)
+//                    }
+//                }
+//            }
+//        }
     }
 
     private fun updateTestViews(data: Entity.TestObject) {
