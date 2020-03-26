@@ -86,12 +86,18 @@ class FirebaseImplementation(private val firebase: FirebaseAuth, val context: Co
         return Single.create<Entity.User> { emitter ->
             firebase.signInWithCredential(credential)
                 .addOnCompleteListener { task ->
-                    task.result?.user?.let { user ->
-                        emitter.onSuccess(user.map()).also { Timber.d("Firebase user: ${user.phoneNumber}") }
-                    } ?: kotlin.run {
+                    if (task.isSuccessful){
+                        task.result?.user?.let { user ->
+                            emitter.onSuccess(user.map()).also { Timber.d("Firebase user: ${user.phoneNumber}") }
+                        }
+                    }else {
                         task.exception?.let {
                             Timber.e("Firebase error: ${it.message}")
                             emitter.tryOnError(it)
+                        }?:kotlin.run {
+                            val msg = "Unknown fireBase error"
+                            Timber.e(msg)
+                            emitter.tryOnError(Throwable(msg))
                         }
                     }
                 }

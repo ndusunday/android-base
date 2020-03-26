@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "194841043071-pgi2bgj8nbnm03d57fnmpp0qlf6esnjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zistus.atracker",
+            "certificate_hash": "fdeeca4fcbcddd0bc7cb9711ed35e122022ee418"
+          }
+        },
+        {
           "client_id": "194841043071-dr8jljl597nkrk8up7brg7lkbu18fkok.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -13,17 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample
+package com.zistus.data
 
 import org.junit.rules.TestRule
-import org.mockito.MockitoAnnotations
 
 class InjectMocksRule {
 
-    companion object {
-        fun create(testClass: Any) = TestRule { statement, _ ->
-            MockitoAnnotations.initMocks(testClass)
-            statement
-        }
-    }
+//    companion object {
+//        fun create(testClass: Any) = TestRule { statement, _ ->
+//            MockitoAnnotations.initMocks(testClass)
+//            statement
+//        }
+//    }
 }

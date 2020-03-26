@@ -10,8 +10,10 @@ import com.zistus.domain.entity.Entity
 import com.zistus.domain.state.DataState
 import com.zistus.domain.usecases.BaseUseCase
 import com.zistus.domain.usecases.user.UserUseCase
+import io.reactivex.Completable
 import io.reactivex.Single
 import org.junit.*
+import org.mockito.ArgumentMatchers.any
 import org.mockito.ArgumentMatchers.anyString
 import org.mockito.Mock
 import org.mockito.MockitoAnnotations
@@ -95,10 +97,10 @@ class AuthenticationViewModelTest {
     fun `login with phone number update loginResponse with success user entity`() {
         val testUser = Entity.User("tester@test.com", "water test")
         // How mock behaves
-//        whenever(userUseCase.loginUserPhone("+2348031162141"))
-//            .thenReturn(Single.just(DataState.Success(testUser)))
+        whenever(userUseCase.verifyPhone("+2348031162141", any()))
+            .thenReturn(Completable.complete())
         // Test method
-//        viewModel.loginUserPhone("08031162141")
+        viewModel.loginUserPhone("+2348031162141", "1234")
 
         // Confirm
         Assert.assertEquals("tester@test.com", (viewModel.loginResponse.value as DataState.Success).data.userId)

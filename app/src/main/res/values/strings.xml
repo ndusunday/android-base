@@ -9,4 +9,7 @@
     <string name="firebase_path">location</string>
     <string name="tester_email">tester@test.com</string>
     <string name="tester_password">testing12</string>
+    <string name="label_phone_number">Phone Number</string>
+    <string name="button_submit">Submit</string>
+    <string name="label_pin">Pin</string>
 </resources>
