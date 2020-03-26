@@ -36,9 +36,11 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:hint="@string/label_phone_number" android:id="@+id/textInputLayout">
-        <com.google.android.material.textfield.TextInputEditText
+        <com.bachors.prefixinput.EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/phoneEntry"/>
+                android:layout_height="match_parent"
+                android:text="+234 "
+                android:id="@+id/phoneEntry"/>
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.button.MaterialButton

@@ -80,6 +80,7 @@ dependencies {
 
     implementation Deps.anko_designs
     implementation Deps.anko_commons
+    implementation Deps.prefix
 
     implementation Deps.retrofit
     implementation Deps.retrofit_gson_converter

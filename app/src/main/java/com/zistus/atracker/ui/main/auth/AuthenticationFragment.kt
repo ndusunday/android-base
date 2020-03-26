@@ -3,10 +3,7 @@ package com.zistus.atracker.ui.main.auth
 import android.os.Bundle
 import android.view.View
 import com.zistus.atracker.R
-import com.zistus.atracker.extension.isCode
-import com.zistus.atracker.extension.observe
-import com.zistus.atracker.extension.toPhoneNG
-import com.zistus.atracker.extension.visible
+import com.zistus.atracker.extension.*
 import com.zistus.atracker.ui.BaseFragment
 import com.zistus.common.utils.StringUtils
 import com.zistus.domain.entity.Entity
@@ -19,7 +16,7 @@ import org.koin.android.viewmodel.ext.android.viewModel
 import timber.log.Timber
 
 class AuthenticationFragment: BaseFragment() {
-    val authViewModel: AuthenticationViewModel by viewModel()
+    private val authViewModel: AuthenticationViewModel by viewModel()
     override fun layoutId(): Int = R.layout.fragment_authentication
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,7 +27,7 @@ class AuthenticationFragment: BaseFragment() {
         submitButton?.setOnClickListener { it->
             context?.longToast("Loading, Wait")
             when(it.submitButton.text.toString()) {
-                "Submit"-> authViewModel.loginUserPhone(phoneEntry.text.toString().toPhoneNG())
+                "Submit"-> authViewModel.loginUserPhone(phoneEntry.text.toString().trimWhiteSpace())
                 "SignIn"-> signInWithVerificationCode()
             }
         }

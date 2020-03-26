@@ -1,3 +1,5 @@
+import Versions.prefix_version
+
 object ApplicationId {
     val application_id = "com.zistus.atracker"
 }
@@ -50,6 +52,8 @@ object Versions {
     val rx_android = "2.1.1"
     val rx_java = "2.2.15"
     val rx_kotlin = "2.3.0"
+
+    val prefix_version = "1.1"
 
     val coroutine_version = "1.3.0"
     val calligraphy = "2.3.0"
@@ -128,6 +132,7 @@ object Deps {
     val timber = "com.jakewharton.timber:timber:${Versions.timber_version}"
 
     val easyPref = "com.pixplicity.easyprefs:library:${Versions.easy_pref_version}"
+    val prefix = "com.github.bachors:Android-Prefix-Input:$prefix_version"
 
     val firebase_auth = "com.google.firebase:firebase-auth:${Versions.firebase_auth_version}"
     val google_location = "com.google.android.gms:play-services-location:${Versions.firebase_location_version}"
